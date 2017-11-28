@@ -5,29 +5,7 @@
 <title>無標題文件</title>
 </head>
 
-<body>今天日期:<?php echo date("Y年m月j日");
-mysql_query("SET NAMES 'UTF8'");
-?>
-<br/>
-<?php
-if (!empty($_SERVER['HTTP_CLIENT_IP']))
-{
-  $ip=$_SERVER['HTTP_CLIENT_IP'];
-  echo 'HTTP_CLIENT_IP: ' ; 
-  echo $ip;
-}
-else if (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
-{
-  $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
-  echo 'HTTP_X_FORWARDED_FOR: ' ; 
-  echo $ip;
-}
-else
-{
-  $ip=$_SERVER['REMOTE_ADDR'];
-  echo 'REMOTE_ADDR: ' ;
-  echo $ip;
-}
-?>
+<body>
+  <a href="http://ncutjiaying.byethost7.com/test/test.php">測試網頁</a>
 </body>
 </html>
